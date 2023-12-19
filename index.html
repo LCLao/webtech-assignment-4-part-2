@@ -3,55 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css"> <!-- css stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-    <!-- fontawesome library -->
-    <title>A4 multipage responsive</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"> <!-- links CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- links the fontawesome library -->
+    <title>A2 single page responsive</title>
 </head>
 <body>
-    
+
     <nav>
         <button id="menu-toggle"><i class="fa-solid fa-bars fa-xl"></i></button>
         <ul id="menu">
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#gallery">SHOP PRODUCTS</a></li>
-            <li><a href="#extras">CLEARANCE</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="product.html">PRODUCT OF THE DAY</a></li>
+            <li><a href="#null">CRY ABOUT ASSIGNMENTS</a></li>
         </ul>
     </nav>
 
-    <!-- hero image -->
     <header>
+        <!-- hero image -->
         <div class="hero-image">
-            <h1>Welcome To Earth</h1>
+            <h1>Old Ass Cameras for Sale</h1>
         </div>
+
     </header>
 
-    <!-- products -->
-    <section id="products">
+    <!-- wrapper starts here so it only wraps around main menu items -->
+    <div class="wrapper">
 
-        <h1>Our Products</h1>
+        <!-- section 3 (extras) -->
+        <section id="products">
 
-        <div class="products-grid">
-            <div>
-                <img src="images/jupiter.jpg" alt="image of jupiter">
-                <h2>Jupiter</h2>
-                <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than 
-                    two and a half times that of all the other planets in the Solar System combined except for the Sun.</p>
-            </div>
-            <div>
-                <img src="images/venus.jpg" alt="image of venus">
-                <h2>Venus</h2>
-                <p>Venus is the second planet from the Sun. It is a rocky planet with the densest atmosphere of all the rocky bodies in the Solar System, 
-                    and the only one with a mass and size that is close to that of its orbital neighbour Earth.</p>
-            </div>
-            <div>
-                <img src="images/Neptune.jpg" alt="image of neptune">
-                <h2>Neptune</h2>
-                <p>Neptune is the eighth planet from the Sun and the farthest IAU-recognized planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, 
-                    the third-most-massive planet, and the densest giant planet. </p>
-            </div>
-        </div>
+            <h1>This Week's Hottest Items</h1>
 
-    </section>
+            <div class="products-grid">
+                <div>
+                    <img src="images/product1.jpg" alt="image of jupiter">
+                    <h2>Polaroid Camera</h2>
+                    <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than 
+                        two and a half times that of all the other planets in the Solar System combined except for the Sun.</p>
+                </div>
+                <div>
+                    <img src="images/product2.jpg" alt="image of venus">
+                    <h2>Olympus Diana Mini</h2>
+                    <p>Venus is the second planet from the Sun. It is a rocky planet with the densest atmosphere of all the rocky bodies in the Solar System, 
+                        and the only one with a mass and size that is close to that of its orbital neighbour Earth.</p>
+                </div>
+                <div>
+                    <img src="images/product3.jpg" alt="image of neptune">
+                    <h2>Highlander</h2>
+                    <p>Neptune is the eighth planet from the Sun and the farthest IAU-recognized planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, 
+                        the third-most-massive planet, and the densest giant planet. </p>
+                </div>
+            </div>
+
+        </section>
+
+         <!-- section 2 (gallery) -->
+         <section id="gallery">
+
+            <h1>Other Products</h1>
+
+            <!-- gallery grid -->
+            <div class="gallery-grid">
+                <img src="images/camera1.jpg" alt="camera 1">
+                <img src="images/camera2.jpg" alt="camera 2">
+                <img src="images/camera3.jpg" alt="camera 3">
+                <img src="images/camera4.jpg" alt="camera 4">
+                <img src="images/camera5.jpg" alt="camera 5">
+                <img src="images/camera6.jpg" alt="camera 6">
+                <img src="images/camera7.jpg" alt="camera 7">
+            </div>
+
+        </section>
+
+    </div>
+    
+    <!-- section 4 (footer) -->
+    <footer id="credits">
+        <p>
+            webtech 3 assignment 2, responsive webpage <br>
+            Designed by Lorelei Lao &copy;, 2nd year GDES <br>
+            Photo credit: Unsplash.com
+        </p>
+    </footer>
+    
+    <!-- connects javascript file to HTML -->
+    <script src="js/script.js"></script>
+      
 </body>
 </html>
